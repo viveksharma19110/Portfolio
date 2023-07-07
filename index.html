@@ -24,12 +24,14 @@
           <span class="text-man">P</span>ortfolio
         </div>
         <div class="right">
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Projects">Projects</a></li>
             <li><a href="#Contact_Me">Contact Me</a></li>
+            <img src="cross.png" class="cross" onclick="closemenu()">
           </ul>
+          <img src="Dropdownmenu.png" class="menu" onclick="openmenu()">
         </div>
       </nav>
     </header>
@@ -111,5 +113,16 @@
         loop: true,
       });
     </script>
+     <script>
+      var sidemenu = document.getElementById("sidemenu");
+  
+      function openmenu(){
+          sidemenu.style.right = "0";
+      }
+      function closemenu(){
+          sidemenu.style.right = "-210px";
+      }
+    </script>
   </body>
 </html>
+

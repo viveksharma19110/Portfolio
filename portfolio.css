@@ -19,6 +19,9 @@ body {
     padding: 0%;
     box-sizing: border-box;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   nav {
     display: flex;
     justify-content: space-between;
@@ -69,6 +72,7 @@ body {
     font-size: 2rem;
     margin-left: 50px;
   }
+  
   .button{
     margin-top: 2%;
     padding: 12px;
@@ -182,3 +186,95 @@ body {
   .logo svg{
     margin-right: 1%;
   }
+  nav .cross{
+    display: none;
+}
+nav .menu{
+    display: none;
+}
+  @media screen and (max-width: 600px){
+
+    .leftSection {
+      font-size: 1.6rem;
+      margin-top: 569px;
+  }
+  img {
+    position: absolute;
+    width: 82%;
+    right: 10%;
+    top: 15%;
+    z-index: -100;
+}
+.h1-secondSection {
+ margin-top: 178px;
+ 
+}
+.p-secondSection {
+  margin-top: 8%;
+  margin-left: 24px;
+  margin-right: 109px;
+  font-size: 15px;
+  padding: 36px;
+  width: 87%;
+  /* border: 0.5px solid rgb(138, 138, 138); */
+  border-radius: 20px;
+  background-color: hsla(0, 0%, 54%, 0.3);
+  backdrop-filter: blur(30px);
+}
+.thirdSection{
+  margin-top: 104px;
+
+}
+.p-thirdSection {
+  margin-top: 7%;
+  margin-left: 23px;
+  font-size: 1rem;
+  padding: 52px;
+  width: 88%;
+  /* border: 0.5px solid rgb(138, 138, 138); */
+  border-radius: 20px;
+  background-color: hsla(0, 0%, 54%, 0.3);
+  backdrop-filter: blur(30px);
+}
+.logo a, p {
+  margin: 2% 0;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 47px;
+}
+nav .cross {
+  
+    display: block;
+    width: 35px;
+    margin-right: 105px;
+    z-index: 2;
+    margin-top: -90px;
+}
+
+
+  nav .menu {
+    display: block;
+    width: 42px;
+    margin-right: -17px;
+    margin-left: 87px;
+}
+
+nav ul{
+  backdrop-filter: blur(30px);
+  background-color:#1766b3;
+  display:inline;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 192px;
+  height: 100vh;
+  padding-top: 50px;
+  
+}.left {
+  font-size: 1rem;
+  text-shadow: -0.07em -0.06em 0 #b9220b, -0.1em 0.04em 0 rgb(6, 137, 45);
+  padding-left: 26px;
+}
+  }
+  
